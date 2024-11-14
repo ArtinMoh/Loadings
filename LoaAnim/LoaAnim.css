@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: black;
+}
+
+#title {
+    top: 12.5%;
+    position: fixed;
+    color: rgb(228, 228, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+}
+/* #box {
+    width: 700px;
+    height: 400px;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    box-shadow: 0px 11px 20px -17px rgb(20 20 20);
+} */
+#box { width: 700px;
+       height: 400px;
+       background-color: rgb(4, 4, 4); 
+       display: flex; 
+       justify-content: center;
+       align-items: center; 
+       border-radius: 30px; 
+       box-shadow: 0px 11px 20px -17px rgb(20 20 20); 
+       position: relative; }
+/* #animationbg {
+    box-shadow: 1px 4px 28px -2px rgb(1, 1, 85);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border-radius: 400px;
+} */
+#animationbg {
+    box-shadow: 1px 4px 28px 20px rgb(117, 2, 170);
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    border-radius: 400px;
+    animation-name: tsbg;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#animation {
+    color: beige;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(63, 63, 255);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 4px 28px -2px rgb(47 47 231);
+    animation-name: ps;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+@keyframes ps {
+    0% { opacity: 10%; }
+    25% { opacity: 100%; }
+    50% { opacity: 100%; }
+    75% { opacity: 100%; }
+    100% { opacity: 100%; }
+}
+@keyframes ps {
+     0% { transform: rotate(0deg);     scale: 1; }
+     25% { transform: rotate(90deg);     scale: 1.2; }
+     50% { transform: rotate(180deg);     scale: 1.1; }
+     75% { transform: rotate(270deg); }
+     100% { transform: rotate(360deg); }
+}
+@keyframes ts {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-90deg); }
+    50% { transform: rotate(-180deg); }
+    75% { transform: rotate(-270deg); }
+    100% { transform: rotate(-360deg); }
+}
+@keyframes tsbg {
+    0% { box-shadow: 1px 4px 28px -2px rgb(117, 2, 170); }
+    25% { box-shadow: 1px 4px 108px 35px rgba(117, 2, 170, 0.644); }
+    50% { box-shadow: 1px 4px 28px -2px rgba(117, 2, 170, 0.281); }
+    75% { box-shadow: 1px 4px 28px -2px rgba(117, 2, 170, 0.13); }
+    100% { box-shadow: 1px 4px 28px -2px rgba(117, 2, 170, 0.014); }
+}
+#text{
+    margin-top: 40%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: ts;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    margin-top: 17px;
+    zoom: 146%;
+}
+/* #rt {
+    color: #d9d9d9;
+    margin-left: 100svh;
+    position: absolute;
+} */
+#rt { 
+    color: #d9d9d9;
+    position: absolute;
+    bottom: 16px;
+    left: 22px;
+    background-color: rgb(63, 63, 255);
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 1px 1px 14px -7px rgb(63, 63, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: background-color 0.1s ease-in;
+}
+#rt:active {
+    background-color: #4967ec;
+    box-shadow: 1px 1px 14px -7px rgba(63, 63, 255, 0.527);
+}
+#rt:hover {
+    background-color: #4967ec3a;
+}

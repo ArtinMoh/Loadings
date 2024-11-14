@@ -1,0 +1,109 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: black;
+}
+
+#title {
+    top: 12.5%;
+    position: fixed;
+    color: rgb(228, 228, 228);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+}
+#box { width: 700px;
+    height: 400px;
+    background-color: rgb(4, 4, 4); 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    border-radius: 30px; 
+    box-shadow: 0px 11px 20px -17px rgb(20 20 20); 
+    position: relative; 
+}
+#animation {
+    color: beige;
+    height: 16px;
+    width: 100px;
+    background-color: rgb(63, 63, 255);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 1px 4px 28px -2px rgb(47 47 231);
+    animation-name: ps;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    margin-left: 0px;
+}
+#animation2 {
+    color: #bdbdbd;
+    height: 16px;
+    width: 100px;
+    background-color: rgb(63, 63, 255);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    box-shadow: 1px 4px 28px -2px rgb(47 47 231);
+    animation-name: ps2;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    margin-left: -100px;
+}
+@keyframes ps {
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(360deg);}
+}
+@keyframes ps2 {
+    0% {transform: rotate(360deg);     color: rgb(255 255 255);}
+    50% {transform: rotate(360deg);}
+}
+#rt  
+     { color: #d9d9d9;
+        position: absolute;
+        bottom: 16px;
+        left: 22px;
+        background-color: rgb(63, 63, 255);
+        width: 60px;
+        height: 20px;
+        text-align: center;
+        border-radius: 6px;
+        box-shadow: 1px 1px 14px -7px rgb(63, 63, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        transition: background-color 0.1s ease-in;
+    }
+#rt:active {
+        background-color: #4967ec;
+        box-shadow: 1px 1px 14px -7px rgba(63, 63, 255, 0.527);
+    }
+#rt:hover {
+        background-color: #4967ec3a;
+    }
+#cm  
+    { color: #d9d9d9;
+       position: absolute;
+       bottom: 16px;
+       left: 90px;
+       background-color: rgb(63, 63, 255);
+       width: 116px;
+       height: 20px;
+       text-align: center;
+       border-radius: 6px;
+       box-shadow: 1px 1px 14px -7px rgb(63, 63, 255);
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   }
+#cm:active {
+       background-color: #4967ec;
+       box-shadow: 1px 1px 14px -7px rgba(63, 63, 255, 0.527);
+   }
+#cm:hover {
+    background-color: #008552;
+    box-shadow: 1px 1px 14px -7px rgba(1, 145, 61, 0.527);
+}
+
+.candle-mode #animation { height: 41px; width: 67px; background-color: rgb(255, 255, 255); box-shadow: 1px 4px 28px -2px rgb(255, 255, 255); margin-left: 17px; margin-right: 17px; animation-name: ps-candle; } .candle-mode #animation2 { color: beige; height: 16px; width: 100px; background-color: rgb(255, 255, 255);  box-shadow: 1px 4px 28px -2px rgb(255, 255, 255); animation-name: ps2-candle; } @keyframes ps-candle { 0% { transform: rotate(0deg); background-color: red; box-shadow: 1px 4px 28px -2px red; } 50% { transform: rotate(360deg); background-color: green; box-shadow: 1px 4px 28px -2px green; } } @keyframes ps2-candle { 0% { transform: rotate(360deg); background-color: red; box-shadow: 1px 4px 28px -2px red; } 50% { transform: rotate(360deg); background-color: green; box-shadow: 1px 4px 28px -2px green; } }
