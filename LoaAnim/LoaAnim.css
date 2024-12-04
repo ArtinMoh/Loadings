@@ -26,7 +26,7 @@ body {
 } */
 #box { width: 700px;
        height: 400px;
-       background-color: rgb(4, 4, 4); 
+       background-color: rgb(18 18 18 / 82%); 
        display: flex; 
        justify-content: center;
        align-items: center; 
